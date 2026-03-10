@@ -1,0 +1,117 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* ------------------*/
+/* navbar styles */
+/* ------------------*/
+nav {
+  padding: 20px 0px;
+  border-bottom: 1px solid #ccc;
+  background-color: black;
+}
+.menu {
+  margin: 0px;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+/* update the <li>s inside the menu */
+.menu > li {
+  padding-left: 0px;
+}
+.menu-link {
+  color: white;
+  font-size: 20px;
+}
+
+/* ------------------------------------------------*/
+/* common styles for hero section and content*/
+/* ------------------------------------------------*/
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------*/
+/* styles for the forms
+/* ------------------*/
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 20px;
+}
+/* .form-row {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+} */
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  padding: 8px 12px;
+}
+
+textarea {
+  height: 50px;
+  font-family: Arial;
+}
+
+.btn {
+  /* color of link */
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+
+  border-radius: 5px; /* rounded corners */
+
+  padding: 12px 12px;
+
+  text-align: center;
+  text-decoration: none; /* remove the underline on a link */
+
+  cursor: pointer; /* show a "hand" icon when user hovers on the link */
+}
+
+.error-message {
+  color: rgb(254, 73, 2);
+}
+
+/* ------------------*/
+/* styles for the table
+/* ------------------*/
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 40px auto; /* centers the table in the middle of screen */
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+td,
+th {
+  padding: 12px;
+  text-align: left;
+}
