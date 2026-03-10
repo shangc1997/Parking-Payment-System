@@ -5,7 +5,6 @@ This project is a web-based Parking Payment System that allows users to:
 - Register and log in
 - Park a vehicle
 - Calculate parking fees
-- Complete parking payments
 - View parking history
 
 ## Features
@@ -14,7 +13,7 @@ This project is a web-based Parking Payment System that allows users to:
 - Secure session management
 - Parking fee calculation
 - Parking history tracking
-- Admin / user authorization
+- Admin/user authorization
 
 ## Tech Stack
 
@@ -45,3 +44,8 @@ npm start
 Open in browser
 
 http://localhost:3000
+
+## Future Improvements
+- Integrate real online payment (Stripe)
+- Add parking availability system
+- Improve UI responsiveness
