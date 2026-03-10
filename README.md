@@ -1,41 +1,18 @@
 # Parking-Payment-System
 ## Overview
-This project is a web-based Parking Payment System that allows users to:
+The Parking Payment System provides a simple platform for users to manage parking payments online. Users can create an account, log in securely, calculate parking fees, and submit payment information. The system stores user and payment data in a database and ensures secure access through authentication and authorization.
 
-- Register and log in
-- Park a vehicle
-- Calculate parking fees
-- View parking history
+This project was developed as part of a web development course and focuses on implementing core full-stack development concepts.
 
 ## Features
-
-- User authentication (login & register)
-- Secure session management
-- Parking fee calculation
-- Parking history tracking
-- Admin/user authorization
-
-## System Architecture
-
-The application follows a simple MVC-style architecture.
-
-Client
-- HTML
-- CSS
-- JavaScript
-
-Server
-- Node.js
-- Express.js
-
-Database
-- MongoDB
-
-Flow
-User → Browser → Express Server → Database
+- User registration and login system
+- Secure authentication and authorization
+- Parking fee calculation based on time
+- Payment submission and record storage
+- User session management
+- Dynamic web pages rendered from the server
 
 ## Tech Stack
-
 Frontend
 - HTML
 - CSS
@@ -48,24 +25,23 @@ Backend
 Database
 - MongoDB
 
-## Installation
+Other Tools
+- dotenv (environment variable management)
+- npm (package management)
 
-Clone the repository
+## System Architecture
+The application follows a simple MVC-style architecture.
 
-git clone https://github.com/shangc1997/Parking-Payment-System.git
+Flow:
+- User → Browser → Express Server → Database
 
-cd Parking-Payment-System
-
-npm install
-
-npm start
-
-Open in browser
-
-http://localhost:3000
+Workflow:
+- 1 User interacts with the website through a browser
+- 2 Requests are sent to the Express server
+- 3 The server processes the request and communicates with the database
+- 4 Data is returned and rendered to the user interface
 
 ## API Endpoints
-
 | Method | Endpoint | Description |
 |------|------|------|
 | GET | /login | login page |
@@ -73,7 +49,39 @@ http://localhost:3000
 | GET | /dashboard | user dashboard |
 | POST | /pay | submit parking payment |
 
+## Installation
+
+Clone the repository:
+- git clone https://github.com/shangc1997/Parking-Payment-System.git
+
+Navigate into the project directory:
+- cd Parking-Payment-System
+
+Install dependencies:
+- npm install
+
+Create environment variables:
+- cp .env.example .env
+
+Edit the .env file and configure your database connection
+
+Start the server:
+- npm start
+
+Open your browser and visit:
+- http://localhost:3000
+
 ## Future Improvements
-- Integrate real online payment (Stripe)
-- Add parking availability system
-- Improve UI responsiveness
+- Integrate real online payment services (Stripe or PayPal)
+- Add parking space availability tracking
+- Improve UI design and responsiveness
+- Add parking history analytics for users
+
+## Learning Outcomes
+Through this project, the following concepts were practiced:
+
+- Full-stack web application development
+- Backend API development using Express
+- Authentication and session management
+- Database integration
+- Dynamic page rendering with EJS
