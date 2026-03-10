@@ -1,0 +1,11 @@
+<nav>
+    <ul class="menu">
+        <li><a href="/" class="menu-link">Home</a></li>        
+
+        <% if (session.currUser === undefined) {%>
+        <li><a href="/users/login-form" class="menu-link">Login</a></li>
+        <% } else { %>
+        <li><a href="/users/logout" class="menu-link">Logout</a></li>
+        <% } %>
+    </ul>    
+</nav>
