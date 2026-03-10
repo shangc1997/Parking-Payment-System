@@ -15,6 +15,25 @@ This project is a web-based Parking Payment System that allows users to:
 - Parking history tracking
 - Admin/user authorization
 
+## System Architecture
+
+The application follows a simple MVC-style architecture.
+
+Client
+- HTML
+- CSS
+- JavaScript
+
+Server
+- Node.js
+- Express.js
+
+Database
+- MongoDB
+
+Flow
+User → Browser → Express Server → Database
+
 ## Tech Stack
 
 Frontend
