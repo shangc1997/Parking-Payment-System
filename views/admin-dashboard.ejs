@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Parking Purchases</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>    
+    <div class="container">
+        <h1>Parking Purchases</h1>
+        
+        <table class="table">
+            <thead>
+                <tr>                    
+                    <th>License Plate</th>
+                    <th>Duration (hours)</th>
+                    <th>Amount Paid</th>
+                </tr>
+            </thead>
+            <tbody>     
+                <% for (let parkingItem of parkingItems) {%>           
+                <tr>                        
+                    <td><%= parkingItem.licensePlate%></td>
+                    <td><%= parkingItem.duration%></td>
+                    <td>$<%= parkingItem.total%></td>
+                </tr>                
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
