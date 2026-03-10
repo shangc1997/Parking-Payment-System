@@ -64,6 +64,15 @@ Open in browser
 
 http://localhost:3000
 
+## API Endpoints
+
+| Method | Endpoint | Description |
+|------|------|------|
+| GET | /login | login page |
+| POST | /login | authenticate user |
+| GET | /dashboard | user dashboard |
+| POST | /pay | submit parking payment |
+
 ## Future Improvements
 - Integrate real online payment (Stripe)
 - Add parking availability system
