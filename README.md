@@ -1,14 +1,20 @@
 # Parking-Payment-System
+## Overview
+This project is a web-based Parking Payment System that allows users to:
 
-A web-based parking payment system that allows users to register, log in, and pay for parking online.
+- Register and log in
+- Park a vehicle
+- Calculate parking fees
+- Complete parking payments
+- View parking history
 
 ## Features
 
 - User authentication (login & register)
+- Secure session management
 - Parking fee calculation
-- Secure payment logic
-- Database integration
-- Session management
+- Parking history tracking
+- Admin / user authorization
 
 ## Tech Stack
 
@@ -28,17 +34,11 @@ Database
 
 Clone the repository
 
-git clone https://github.com/yourname/parking-payment-system
+git clone https://github.com/shangc1997/Parking-Payment-System.git
 
-Install dependencies
+cd Parking-Payment-System
 
 npm install
-
-Create environment variables
-
-cp .env.example .env
-
-Run the server
 
 npm start
 
